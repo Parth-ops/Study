@@ -1,0 +1,295 @@
+/*---------------------------------------------*/
+/* color */
+/*---------------------------------------------*/
+#3954a5
+/*---------------------------------------------*/
+/* font */
+/*---------------------------------------------*/
+
+
+/*---------------------------------------------*/
+/* REUSE */
+/*---------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+h2{
+    text-align: center;
+}
+
+h3{
+    font-weight: 900;
+}
+
+p{
+    color: #fff;
+}
+
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.section-faces a:link,
+.section-faces a:active{
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #000000;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.section-faces a:hover,
+.section-faces a:visited{
+    color: rgb(0, 0, 0);
+     border-bottom: 1px solid transparent;
+}
+
+
+/*---------------------------------------------*/
+/* NAVBAR */
+/*---------------------------------------------*/
+.navbar{
+    background: rgba(240,240,240,0.8);
+}
+
+.navbar-brand{
+    padding-left: 150%;
+   
+    
+}
+/*---------------------------------------------*/
+/* HEADER */
+/*---------------------------------------------*/
+.hero-img{
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.7)),  url(img/hero-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    
+}
+
+.hero-text-box{
+    padding-left: 50px;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*---------------------------------------------*/
+/*MAIN*/
+/*---------------------------------------------*/
+
+.section-features .long-copy{
+    margin-bottom: 40px;
+}
+
+
+.section-features {
+    padding-top: 100px;
+    padding-bottom: 100px;;
+}
+
+.section-features p {
+    color: #000;
+}
+
+.long-copy{
+    padding-top: 50px;
+}
+
+
+.service-nav{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.47),rgba(255, 255, 255, 0.0)), url(img/b&wbg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    padding-top: 35px;
+    justify-content: center;
+    align-items: center;
+   
+    min-height: 100vh;
+
+}
+
+.container{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container svg{
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.container .card{
+    border-radius: 25px;
+    position: relative;
+    height:350px;
+    background: #3954a5;
+    opacity: 0.98;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 10px;
+}
+
+.container .card::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: #063c88;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+
+.container .card .content{
+    padding: 30px;
+    text-align: center;
+}
+
+.container .card .content h2{
+    position: absolute;
+    right: 30px;
+    font-size: 4em;
+    font-weight: 800;
+    color: rgb(0, 35, 131);
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.container .card:hover .content h2{
+   opacity: 1;
+   transform: translateY(-40px); 
+}
+
+.container .card .content h3{
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.container .card:hover .content h3,
+.container .card:hover .content p{
+    opacity: 1;
+}
+
+.container .card .content a{
+    display: inline-block;
+    margin-top: 25px;
+    padding:8px 15px;
+    background: #fff;
+    color: #063c88;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s background, color;
+}
+.container .card .content a:hover{
+   background: rgb(0, 35, 131);
+   color: #fff;
+}
+
+/*---------------------------------------------*/
+/*About us*/
+/*---------------------------------------------*/
+
+.about-us h2{
+    position: relative;
+    margin: 40px;
+}
+
+
+.section-faces{
+    background: linear-gradient(rgba(0, 0, 0, 0.47),rgba(255, 255, 255, 0.0)), url(img/dark.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+    padding-top: 75px;;
+}
+
+.section-faces .card{
+    
+    width: 300px;
+    height: 400px;
+    background: #7f90c5; 
+    opacity: 0.91;   
+}
+
+.section-faces .container img{
+    opacity: 0.4;
+    width:100%;
+    height:auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+
+.section-faces .container img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.section-faces .container h2{
+    font-weight: 600;
+    z-index: 1;
+    margin: 110px;
+}
+
+.img-fluid{
+    position: absolute;
+    
+    z-index: 999999;
+}
+
+.i{
+    font-size: 250%;
+    display:block;
+
+   
+}
+
+.github{
+   transition: color 0.2s; 
+}
+
+.github:hover{
+    color:	#211F1F;
+}
